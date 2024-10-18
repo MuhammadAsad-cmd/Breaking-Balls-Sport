@@ -3,25 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-montserrat: "Montserrat", sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.NavbarShadow {
+  box-shadow: 0px 4px 4px 0px #00000008;
+}
+
+.BG-Gradient {
+  background: linear-gradient(
+    97.94deg,
+    #6bccef -8.9%,
+    rgba(16, 25, 58, 0.53) 91.05%
+  );
 }

@@ -1,10 +1,10 @@
+import WrMtachupsPage from "@/app/_components/WrMtachupsPage/WrMtachupsPage";
 import React from "react";
-import HeroSection from "./_components/HeroSection/HeroSection";
 
 const page = () => {
   return (
     <>
-      <HeroSection />
+      <WrMtachupsPage />
     </>
   );
 };

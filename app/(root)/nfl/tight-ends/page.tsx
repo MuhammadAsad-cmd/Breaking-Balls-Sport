@@ -1,10 +1,10 @@
+import TeMatchups from "@/app/_components/TeMatchups/TeMatchups";
 import React from "react";
-import HeroSection from "./_components/HeroSection/HeroSection";
 
 const page = () => {
   return (
     <>
-      <HeroSection />
+      <TeMatchups />
     </>
   );
 };

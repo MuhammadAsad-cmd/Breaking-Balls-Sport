@@ -1,10 +1,10 @@
+import RbMatchupPage from "@/app/_components/RbMatchupPage/RbMatchupPage";
 import React from "react";
-import HeroSection from "./_components/HeroSection/HeroSection";
 
 const page = () => {
   return (
     <>
-      <HeroSection />
+      <RbMatchupPage />
     </>
   );
 };
