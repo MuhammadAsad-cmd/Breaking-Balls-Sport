@@ -3,6 +3,7 @@ import React from "react";
 
 interface TableRowProps {
   team: string;
+  player: string;
   imgSrc: string;
   alt: string;
   score1: number;
@@ -10,22 +11,25 @@ interface TableRowProps {
   percentage: number;
   bgClass: string;
   percentageBgClass: string;
+  bgopponent: string;
+  bgclass2: string;
 }
 
 const WrMatchTable: React.FC<TableRowProps> = ({
   team,
+  player,
   imgSrc,
   alt,
-  score1,
+  bgopponent,
   score2,
   percentage,
   bgClass,
-  percentageBgClass,
+  bgclass2,
 }) => {
   return (
     <>
       <tr>
-        <td className="w-[276px] p-0 pr-1.5">
+        <td className="p-0 pr-1.5">
           <div className={`${bgClass} h-16 whitespace-nowrap`}>
             <div className="flex h-full items-center justify-center gap-2.5">
               <div>
@@ -41,23 +45,46 @@ const WrMatchTable: React.FC<TableRowProps> = ({
             </div>
           </div>
         </td>
-        <td className="w-[243px] p-0 pr-1.5">
+        <td className="p-0 pr-1.5">
           <div className={`${bgClass} h-16`}>
             <div className="flex h-full items-center justify-center gap-2.5">
-              <p className="text-sm font-medium">{score1}</p>
+              <p className="text-sm font-medium">{player}</p>
             </div>
           </div>
         </td>
-        <td className="w-[243px] p-0 pr-1.5">
-          <div className={`${bgClass} h-16`}>
+        <td className="p-0 pr-1.5">
+          <div className={`${bgClass} h-16 whitespace-nowrap`}>
+            <div className="flex h-full items-center justify-center gap-2.5">
+              <div>
+                <Image
+                  width={30}
+                  height={30}
+                  unoptimized
+                  src={imgSrc}
+                  alt={alt}
+                />
+              </div>
+              <p className="text-sm font-medium">{team}</p>
+            </div>
+          </div>
+        </td>
+        <td className="p-0 pr-1.5">
+          <div className={`${bgopponent} h-16`}>
             <div className="flex h-full items-center justify-center gap-2.5">
               <p className="text-sm font-medium">{score2}</p>
             </div>
           </div>
         </td>
-        <td className="w-[265px] p-0">
+        <td className="p-0 pr-1.5">
+          <div className={`${bgclass2} h-16`}>
+            <div className="flex h-full items-center justify-center gap-2.5">
+              <p className="text-sm font-medium">{score2}</p>
+            </div>
+          </div>
+        </td>
+        <td className="p-0">
           <div
-            className={`${percentageBgClass} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
+            className={`${bgclass2} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
           >
             <p className="text-sm font-medium">{percentage}</p>
           </div>

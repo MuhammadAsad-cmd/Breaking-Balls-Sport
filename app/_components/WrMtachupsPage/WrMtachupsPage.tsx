@@ -5,7 +5,8 @@ import WrMatchTable from "./WrMatchTable";
 const WrMtachupsPage = () => {
   const tableData = [
     {
-      team: "Carolina Panthers",
+      team: "Panthers",
+      player: "Carolina Panthers",
       imgSrc: "/images/yankees_wbgs 1.png",
       alt: "Yankees",
       score1: 38,
@@ -13,9 +14,12 @@ const WrMtachupsPage = () => {
       percentage: 0.355,
       bgClass: "bg-paleBlue", // background for alternating rows
       percentageBgClass: "bg-lightGreen2", // background for the percentage
+      bgopponent: "bg-lightGreen2",
+      bgclass2: "bg-lightGreen",
     },
     {
-      team: "Carolina Panthers",
+      team: "Panthers",
+      player: "Carolina Panthers",
       imgSrc: "/images/yankees_wbgs 1.png",
       alt: "Yankees",
       score1: 38,
@@ -23,9 +27,12 @@ const WrMtachupsPage = () => {
       percentage: 0.355,
       bgClass: "", // no background for alternating rows
       percentageBgClass: "bg-paleGreen3",
+      bgopponent: "bg-paleGreen3",
+      bgclass2: "bg-paleGreen",
     },
     {
-      team: "Carolina Panthers",
+      team: "Panthers",
+      player: "Carolina Panthers",
       imgSrc: "/images/yankees_wbgs 1.png",
       alt: "Yankees",
       score1: 38,
@@ -33,9 +40,12 @@ const WrMtachupsPage = () => {
       percentage: 0.355,
       bgClass: "bg-paleBlue",
       percentageBgClass: "bg-lightGreen2",
+      bgopponent: "bg-lightGreen2",
+      bgclass2: "bg-paleGreen2",
     },
     {
-      team: "Carolina Panthers",
+      team: "Panthers",
+      player: "Carolina Panthers",
       imgSrc: "/images/yankees_wbgs 1.png",
       alt: "Yankees",
       score1: 38,
@@ -43,29 +53,12 @@ const WrMtachupsPage = () => {
       percentage: 0.355,
       bgClass: "",
       percentageBgClass: "bg-lightGreen2",
+      bgopponent: "bg-pink",
+      bgclass2: "bg-lightGreen2",
     },
     {
-      team: "Carolina Panthers",
-      imgSrc: "/images/yankees_wbgs 1.png",
-      alt: "Yankees",
-      score1: 38,
-      score2: 38,
-      percentage: 0.355,
-      bgClass: "bg-paleBlue",
-      percentageBgClass: "bg-paleGreen3",
-    },
-    {
-      team: "Carolina Panthers",
-      imgSrc: "/images/yankees_wbgs 1.png",
-      alt: "Yankees",
-      score1: 38,
-      score2: 38,
-      percentage: 0.355,
-      bgClass: "",
-      percentageBgClass: "bg-lightGreen2",
-    },
-    {
-      team: "Carolina Panthers",
+      team: "Panthers",
+      player: "Carolina Panthers",
       imgSrc: "/images/yankees_wbgs 1.png",
       alt: "Yankees",
       score1: 38,
@@ -73,9 +66,12 @@ const WrMtachupsPage = () => {
       percentage: 0.355,
       bgClass: "bg-paleBlue",
       percentageBgClass: "bg-paleGreen3",
+      bgopponent: "bg-lightGreen2",
+      bgclass2: "bg-softGreen",
     },
     {
-      team: "Carolina Panthers",
+      team: "Panthers",
+      player: "Carolina Panthers",
       imgSrc: "/images/yankees_wbgs 1.png",
       alt: "Yankees",
       score1: 38,
@@ -83,6 +79,34 @@ const WrMtachupsPage = () => {
       percentage: 0.355,
       bgClass: "",
       percentageBgClass: "bg-lightGreen2",
+      bgopponent: "bg-softPink",
+      bgclass2: "bg-softPink",
+    },
+    {
+      team: "Panthers",
+      player: "Carolina Panthers",
+      imgSrc: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      score1: 38,
+      score2: 38,
+      percentage: 0.355,
+      bgClass: "bg-paleBlue",
+      percentageBgClass: "bg-paleGreen3",
+      bgopponent: "bg-lightGreen2",
+      bgclass2: "bg-lightRed",
+    },
+    {
+      team: "Panthers",
+      player: "Carolina Panthers",
+      imgSrc: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      score1: 38,
+      score2: 38,
+      percentage: 0.355,
+      bgClass: "",
+      percentageBgClass: "bg-lightGreen2",
+      bgopponent: "bg-lightGreen2",
+      bgclass2: "bg-pink",
     },
   ];
 
@@ -98,25 +122,29 @@ const WrMtachupsPage = () => {
             <table className="w-full border-collapse">
               <thead className="text-center">
                 <tr>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
-                      Team
+                  <th scope="col" className="w-[193px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">Team</h4>
+                  </th>
+                  <th scope="col" className="w-[243px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">Player</h4>
+                  </th>
+                  <th scope="col" className="w-[193px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">
+                      Opponent
                     </h4>
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
-                      ATT Allowed
+                  <th scope="col" className="w-[133px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">
+                      Opponent RPG
                     </h4>
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
-                      TD’s Allowed
+                  <th scope="col" className="w-[133px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">
+                      Opponent YPG Allowed
                     </h4>
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
-                      TD % Allowed
-                    </h4>
+                  <th scope="col" className="w-[114px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">Rank</h4>
                   </th>
                 </tr>
               </thead>
@@ -124,7 +152,10 @@ const WrMtachupsPage = () => {
                 {tableData.map((row, index) => (
                   <WrMatchTable
                     key={index}
+                    bgopponent={row.bgopponent}
+                    bgclass2={row.bgclass2}
                     team={row.team}
+                    player={row.player}
                     imgSrc={row.imgSrc}
                     alt={row.alt}
                     score1={row.score1}

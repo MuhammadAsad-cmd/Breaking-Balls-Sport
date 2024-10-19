@@ -1,7 +1,143 @@
 import React from "react";
 import Image from "next/image";
+import RbMatchTable from "./RbMatchTable";
 
 const RbMatchupPage = () => {
+  const tableData = [
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-paleBlue",
+      bgColor2: "bg-paleCyan",
+      bgColorStats: "bg-lightGreen",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-white",
+      bgColor2: "bg-white",
+      bgColorStats: "bg-paleGreen",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-paleBlue",
+      bgColor2: "bg-paleCyan",
+      bgColorStats: "bg-paleGreen2",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-white",
+      bgColor2: "bg-white",
+      bgColorStats: "bg-lightGreen2",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-paleBlue",
+      bgColor2: "bg-paleCyan",
+      bgColorStats: "bg-softGreen",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-white",
+      bgColor2: "bg-white",
+      bgColorStats: "bg-softGreen",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-paleBlue",
+      bgColor2: "bg-paleCyan",
+      bgColorStats: "bg-lightPink",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-white",
+      bgColor2: "bg-white",
+      bgColorStats: "bg-softPink",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-paleBlue",
+      bgColor2: "bg-paleCyan",
+      bgColorStats: "bg-lightRed",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-white",
+      bgColor2: "bg-white",
+      bgColorStats: "bg-pink",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-paleBlue",
+      bgColor2: "bg-paleCyan",
+      bgColorStats: "bg-mediumPink",
+    },
+    {
+      teamLogo: "/images/yankees_wbgs 1.png",
+      alt: "Yankees",
+      teamShortName: "Panthers",
+      fullTeamName: "Carolina Panthers",
+      stat1: "0.355",
+      stat2: "0.355",
+      bgColor1: "bg-white",
+      bgColor2: "bg-white",
+      bgColorStats: "bg-red",
+    },
+  ];
+
   return (
     <>
       <div className="mt-6 px-[34px]">
@@ -41,720 +177,20 @@ const RbMatchupPage = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16 bg-paleCyan">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-paleGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-paleGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16 bg-paleCyan">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-paleGreen2">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-paleGreen2">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightGreen2">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightGreen2">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16 bg-paleCyan">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-softGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-softGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-mintGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-mintGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16 bg-paleCyan">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-veryLightGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-veryLightGreen">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightPink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightPink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16 bg-paleCyan">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-softPink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-softPink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightRed">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-lightRed">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16 bg-paleCyan">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-pink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-pink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-mediumPink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-mediumPink">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16 bg-paleCyan">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap bg-paleBlue">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-red">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-red">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
-                <tr className="border-collapse">
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[252px] p-0 pr-1.5">
-                    <div className="h-16">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <p className="text-sm font-medium">Carolina Panthers</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[193px] p-0 pr-1.5">
-                    <div className="h-16 whitespace-nowrap">
-                      <div className="flex h-full items-center justify-center gap-2.5">
-                        <div>
-                          <Image
-                            width={30}
-                            height={30}
-                            unoptimized
-                            src="/images/yankees_wbgs 1.png"
-                            alt="Yankees"
-                          />
-                        </div>
-                        <p className="text-sm font-medium"> Panthers </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0 pr-1.5">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-strongRed">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                  <td className="w-[244px] p-0">
-                    <div className="flex h-16 items-center justify-center gap-2.5 whitespace-nowrap bg-strongRed">
-                      <p className="text-sm font-medium">0.355</p>
-                    </div>
-                  </td>
-                </tr>
+                {tableData.map((row, index) => (
+                  <RbMatchTable
+                    key={index}
+                    teamLogo={row.teamLogo}
+                    teamShortName={row.teamShortName}
+                    fullTeamName={row.fullTeamName}
+                    alt={row.alt}
+                    stat1={row.stat1}
+                    stat2={row.stat2}
+                    bgColor1={row.bgColor1}
+                    bgColor2={row.bgColor2}
+                    bgColorStats={row.bgColorStats}
+                  />
+                ))}
               </tbody>
             </table>
           </div>

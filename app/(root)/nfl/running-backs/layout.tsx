@@ -24,7 +24,7 @@ export default function RunningbackLayout({
           },
           {
             label: "Receiving Stats",
-            href: "/nfl/running-backs/redzone-rushing",
+            href: "/nfl/running-backs/rb-receiving",
           },
         ];
       case "Wide Receivers":

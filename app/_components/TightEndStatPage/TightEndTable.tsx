@@ -5,9 +5,13 @@ interface TableRowProps {
   team: string;
   imgSrc: string;
   alt: string;
-  score1: number;
-  score2: number;
-  percentage: number;
+  games: number;
+  targetpergame: number;
+  targetshare: number;
+  receptions: number;
+  receptionsperpage: number;
+  recyards: number;
+  rectardspergame: number;
   bgClass: string;
   percentageBgClass: string;
 }
@@ -16,16 +20,20 @@ const TightEndTable: React.FC<TableRowProps> = ({
   team,
   imgSrc,
   alt,
-  score1,
-  score2,
-  percentage,
+  games,
+  targetpergame,
+  targetshare,
+  receptions,
+  receptionsperpage,
+  recyards,
+  rectardspergame,
   bgClass,
   percentageBgClass,
 }) => {
   return (
     <>
       <tr>
-        <td className="w-[276px] p-0 pr-1.5">
+        <td className="p-0">
           <div className={`${bgClass} h-16 whitespace-nowrap`}>
             <div className="flex h-full items-center justify-center gap-2.5">
               <div>
@@ -41,25 +49,60 @@ const TightEndTable: React.FC<TableRowProps> = ({
             </div>
           </div>
         </td>
-        <td className="w-[243px] p-0 pr-1.5">
+        <td className="p-0">
           <div className={`${bgClass} h-16`}>
             <div className="flex h-full items-center justify-center gap-2.5">
-              <p className="text-sm font-medium">{score1}</p>
+              <p className="text-sm font-medium">{games}</p>
             </div>
           </div>
         </td>
-        <td className="w-[243px] p-0 pr-1.5">
+        <td className="p-0 pr-1.5">
           <div className={`${bgClass} h-16`}>
             <div className="flex h-full items-center justify-center gap-2.5">
-              <p className="text-sm font-medium">{score2}</p>
+              <p className="text-sm font-medium">{targetpergame}</p>
             </div>
           </div>
         </td>
-        <td className="w-[265px] p-0">
+        <td className="w-[103px] p-0 pr-1.5">
           <div
             className={`${percentageBgClass} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
           >
-            <p className="text-sm font-medium">{percentage}</p>
+            <p className="text-sm font-medium">{targetshare}</p>
+          </div>
+        </td>
+        <td className="w-[103px] p-0 pr-1.5">
+          <div
+            className={`${bgClass} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
+          >
+            <p className="text-sm font-medium">{receptions}</p>
+          </div>
+        </td>
+        <td className="w-[99px] p-0 pr-1.5">
+          <div
+            className={`${percentageBgClass} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
+          >
+            <p className="text-sm font-medium">{receptionsperpage}</p>
+          </div>
+        </td>
+        <td className="w-[103px] p-0 pr-1.5">
+          <div
+            className={`${percentageBgClass} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
+          >
+            <p className="text-sm font-medium">{recyards}</p>
+          </div>
+        </td>
+        <td className="w-[99px] p-0 pr-1.5">
+          <div
+            className={`${bgClass} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
+          >
+            <p className="text-sm font-medium">{rectardspergame}</p>
+          </div>
+        </td>
+        <td className="w-[130px] p-0">
+          <div
+            className={`${percentageBgClass} flex h-16 items-center justify-center gap-2.5 whitespace-nowrap`}
+          >
+            <p className="text-sm font-medium">{rectardspergame}</p>
           </div>
         </td>
       </tr>
