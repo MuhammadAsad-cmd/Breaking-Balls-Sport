@@ -42,11 +42,11 @@ const NavBar = () => {
                     WNBA
                   </p>
                 </li>
-                <li>
+                <Navlink href="/mlb/mlb-trends">
                   <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
                     MLB
                   </p>
-                </li>
+                </Navlink>
                 <li>
                   <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
                     Soccer

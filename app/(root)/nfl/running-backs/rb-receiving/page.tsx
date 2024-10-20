@@ -1,4 +1,4 @@
-import RbReceingPage from "@/app/_components/RbReceingPage/RbReceingPage";
+import RbReceingPage from "@/app/_components/NFLPages/RbReceingPage/RbReceingPage";
 import React from "react";
 
 const page = () => {

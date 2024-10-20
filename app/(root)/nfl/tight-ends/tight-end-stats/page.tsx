@@ -1,4 +1,4 @@
-import TightEndStatPage from "@/app/_components/TightEndStatPage/TightEndStatPage";
+import TightEndStatPage from "@/app/_components/NFLPages/TightEndStatPage/TightEndStatPage";
 import React from "react";
 
 const page = () => {

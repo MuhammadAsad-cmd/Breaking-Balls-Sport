@@ -1,4 +1,4 @@
-import RedZoneMainPage from "@/app/_components/RedZoneMainPage/RedZoneMainPage";
+import RedZoneMainPage from "@/app/_components/NFLPages/RedZoneMainPage/RedZoneMainPage";
 import React from "react";
 
 const page = () => {

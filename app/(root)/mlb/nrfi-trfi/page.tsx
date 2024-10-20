@@ -1,10 +1,10 @@
-import TeMatchups from "@/app/_components/NFLPages/TeMatchups/TeMatchups";
+import NrfiPage from "@/app/_components/MLBPages/NrfiPage/NrfiPage";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <TeMatchups />
+      <NrfiPage />
     </>
   );
 };

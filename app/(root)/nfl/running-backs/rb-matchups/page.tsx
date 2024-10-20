@@ -1,4 +1,4 @@
-import RbMatchupPage from "@/app/_components/RbMatchupPage/RbMatchupPage";
+import RbMatchupPage from "@/app/_components/NFLPages/RbMatchupPage/RbMatchupPage";
 import React from "react";
 
 const page = () => {

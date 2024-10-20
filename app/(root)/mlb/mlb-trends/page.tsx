@@ -1,10 +1,10 @@
-import TeMatchups from "@/app/_components/NFLPages/TeMatchups/TeMatchups";
+import MlbTrends from "@/app/_components/MLBPages/MlbTrends/MlbTrends";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <TeMatchups />
+      <MlbTrends />
     </>
   );
 };

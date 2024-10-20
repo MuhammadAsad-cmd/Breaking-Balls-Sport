@@ -1,4 +1,4 @@
-import TeMatchups from "@/app/_components/TeMatchups/TeMatchups";
+import TeMatchups from "@/app/_components/NFLPages/TeMatchups/TeMatchups";
 import React from "react";
 
 const page = () => {

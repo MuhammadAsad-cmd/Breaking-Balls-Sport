@@ -1,4 +1,4 @@
-import WrMtachupsPage from "@/app/_components/WrMtachupsPage/WrMtachupsPage";
+import WrMtachupsPage from "@/app/_components/NFLPages/WrMtachupsPage/WrMtachupsPage";
 import React from "react";
 
 const page = () => {

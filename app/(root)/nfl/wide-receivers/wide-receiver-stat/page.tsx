@@ -1,4 +1,4 @@
-import WideReceiverPage from "@/app/_components/WideReceiverPage/WideReceiverPage";
+import WideReceiverPage from "@/app/_components/NFLPages/WideReceiverPage/WideReceiverPage";
 import React from "react";
 
 const page = () => {
