@@ -39,7 +39,7 @@ const BattervPitcherPage = () => {
       avg: 0.355,
       obp: 0.355,
       slg: 0.355,
-      bgColor1: "bg-paleBlue",
+      bgColor1: "bg-white",
     },
     {
       teamLogo: "/images/yankees_wbgs 1.png",
@@ -77,7 +77,7 @@ const BattervPitcherPage = () => {
       avg: 0.355,
       obp: 0.355,
       slg: 0.355,
-      bgColor1: "bg-paleBlue",
+      bgColor1: "bg-white",
     },
     {
       teamLogo: "/images/yankees_wbgs 1.png",
@@ -115,7 +115,7 @@ const BattervPitcherPage = () => {
       avg: 0.355,
       obp: 0.355,
       slg: 0.355,
-      bgColor1: "bg-paleBlue",
+      bgColor1: "bg-white",
     },
     {
       teamLogo: "/images/yankees_wbgs 1.png",
@@ -153,7 +153,7 @@ const BattervPitcherPage = () => {
       avg: 0.355,
       obp: 0.355,
       slg: 0.355,
-      bgColor1: "bg-paleBlue",
+      bgColor1: "bg-white",
     },
     {
       teamLogo: "/images/yankees_wbgs 1.png",
@@ -191,7 +191,7 @@ const BattervPitcherPage = () => {
       avg: 0.355,
       obp: 0.355,
       slg: 0.355,
-      bgColor1: "bg-paleBlue",
+      bgColor1: "bg-white",
     },
     {
       teamLogo: "/images/yankees_wbgs 1.png",
@@ -229,18 +229,18 @@ const BattervPitcherPage = () => {
       avg: 0.355,
       obp: 0.355,
       slg: 0.355,
-      bgColor1: "bg-paleBlue",
+      bgColor1: "bg-white",
     },
   ];
   return (
     <>
-      <div className="mt-6 px-8">
+      <div className="mt-6 overflow-hidden px-8">
         <h2 className="text-4xl font-extrabold uppercase leading-tight text-deepBlue">
           BATTER VS PITCHER
         </h2>
-        <div className="mt-12 w-full overflow-x-auto">
-          <div className="w-full overflow-x-auto">
-            <table className="w-full min-w-full overflow-x-auto text-center">
+        <div className="mt-12">
+          <div className="relative w-full overflow-x-auto">
+            <table className="w-full table-fixed">
               <thead className="text-center">
                 <tr>
                   <th scope="col" className="w-[215px] py-3">
@@ -253,62 +253,62 @@ const BattervPitcherPage = () => {
                       Pitcher
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       PA
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       AB
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       H
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       B1
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       B2
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       B3
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       HR
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       BB
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       SO
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       AVG
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       OBP
                     </h4>
                   </th>
-                  <th scope="col" className="py-3 pr-1.5">
+                  <th scope="col" className="w-[54px] py-3 pr-1.5">
                     <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
                       SLG
                     </h4>

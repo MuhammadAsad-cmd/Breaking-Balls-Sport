@@ -140,14 +140,14 @@ const MlbTrends = () => {
 
   return (
     <>
-      <div className="mt-6 w-full px-[34px]">
+      <div className="mt-6 w-full overflow-hidden px-[34px]">
         <h2 className="text-4xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue">
           MLB TRENDS
         </h2>
 
         <div className="mt-[46px]">
-          <div className="relative overflow-x-auto">
-            <table className="w-full border-collapse">
+          <div className="relative w-full overflow-x-auto">
+            <table className="w-full table-fixed">
               <thead className="text-center">
                 <tr>
                   <th scope="col" className="w-[431px] py-3">
@@ -197,8 +197,8 @@ const MlbTrends = () => {
           </div>
         </div>
         <div className="mt-[50px]">
-          <div className="relative overflow-x-auto">
-            <table className="w-full border-collapse">
+          <div className="relative w-full overflow-x-auto">
+            <table className="w-full table-fixed">
               <thead className="text-center">
                 <tr>
                   <th scope="col" className="w-[431px] py-3">
@@ -250,8 +250,8 @@ const MlbTrends = () => {
           </div>
         </div>
         <div className="mt-[50px]">
-          <div className="relative overflow-x-auto">
-            <table className="w-full border-collapse">
+          <div className="relative w-full overflow-x-auto">
+            <table className="w-full table-fixed">
               <thead className="text-center">
                 <tr>
                   <th scope="col" className="w-[431px] py-3">

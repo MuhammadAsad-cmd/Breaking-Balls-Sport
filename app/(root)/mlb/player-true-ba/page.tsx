@@ -1,9 +1,10 @@
+import PlayerTrue from "@/app/_components/MLBPages/PlayerTrue/PlayerTrue";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <h2>jjjj</h2>
+      <PlayerTrue />
     </>
   );
 };

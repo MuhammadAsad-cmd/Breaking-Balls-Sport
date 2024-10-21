@@ -9,7 +9,7 @@ interface TightEndlayoutProps {
 export default function TightEndlayout({ children }: TightEndlayoutProps) {
   const getSidebarTabs = () => {
     return [
-      { label: "Player True BA", href: "/mlb/mlb-trends" },
+      { label: "Player True BA", href: "/mlb/player-true-ba" },
       {
         label: "MLB Trends",
         href: "/mlb/mlb-trends",
@@ -31,7 +31,7 @@ export default function TightEndlayout({ children }: TightEndlayoutProps) {
         <div className="sticky top-0 h-full min-h-[100vh] w-full max-w-[230px] bg-lightGray">
           <NflSidebar tabs={getSidebarTabs()} />
         </div>
-        <div className="mb-14 w-full">{children}</div>
+        <div className="mb-14 w-full overflow-hidden">{children}</div>
       </div>
     </>
   );

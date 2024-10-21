@@ -87,7 +87,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
         </td>
 
         {/* Stats Cell */}
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -97,7 +97,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={PA} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -107,7 +107,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={AB} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -117,7 +117,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={h} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -127,7 +127,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={b1} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -137,7 +137,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={b2} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -147,7 +147,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={b3} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -157,7 +157,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={hr} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -167,7 +167,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={bb} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -177,7 +177,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={So} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -187,7 +187,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={avg} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
@@ -197,7 +197,7 @@ const BattervPitcherTable: React.FC<TableRowProps> = ({
             <TableCell value={obp} />
           </div>
         </td>
-        <td className={`p-0`}>
+        <td className={`w-[54px] p-0 pr-1.5`}>
           <div
             className={clsx(
               "flex h-16 items-center justify-between px-4",
