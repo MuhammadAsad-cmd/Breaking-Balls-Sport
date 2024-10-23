@@ -127,8 +127,8 @@ const RbDeffenceTable: React.FC = ({}) => {
   ];
   return (
     <>
-      <div className="mt-[46px]">
-        <div className="relative overflow-x-auto">
+      <div className="mt-5 overflow-hidden lg:mt-[46px]">
+        <div className="relative w-full overflow-x-auto">
           <table className="w-full table-fixed">
             <thead className="text-center">
               <tr>

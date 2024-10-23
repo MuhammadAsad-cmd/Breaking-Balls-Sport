@@ -135,8 +135,8 @@ const RbOffence: React.FC = () => {
   ];
   return (
     <>
-      <div className="mt-[46px]">
-        <div className="relative overflow-x-auto">
+      <div className="mt-[46px] overflow-hidden">
+        <div className="relative w-full overflow-x-auto">
           <table className="w-full table-fixed">
             <thead className="text-center">
               <tr>

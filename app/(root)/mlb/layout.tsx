@@ -1,38 +1,12 @@
-"use client";
-import { ReactNode, useState } from "react";
-import NflSidebar from "@/app/_components/Sidebar/NflSidebar/NflSidebar";
+import { ReactNode } from "react";
+import MlbMainLayout from "@/app/_components/MlbMainLayout/MlbMainLayout";
 
-interface TightEndlayoutProps {
-  children: ReactNode;
+interface MLBLayoutProps {
+  children: ReactNode; // Define the type for children
 }
 
-export default function TightEndlayout({ children }: TightEndlayoutProps) {
-  const getSidebarTabs = () => {
-    return [
-      { label: "Player True BA", href: "/mlb/player-true-ba" },
-      {
-        label: "MLB Trends",
-        href: "/mlb/mlb-trends",
-      },
-      {
-        label: "Batter vs Pitcher",
-        href: "/mlb/batter-v-pitcher",
-      },
-      {
-        label: "NRFI YRFI",
-        href: "/mlb/nrfi-trfi",
-      },
-    ];
-  };
+const MLBLayout: React.FC<MLBLayoutProps> = ({ children }) => {
+  return <MlbMainLayout>{children}</MlbMainLayout>;
+};
 
-  return (
-    <>
-      <div className="flex h-full">
-        <div className="sticky top-0 h-full min-h-[100vh] w-full max-w-[230px] bg-lightGray">
-          <NflSidebar tabs={getSidebarTabs()} />
-        </div>
-        <div className="mb-14 w-full overflow-hidden">{children}</div>
-      </div>
-    </>
-  );
-}
+export default MLBLayout;

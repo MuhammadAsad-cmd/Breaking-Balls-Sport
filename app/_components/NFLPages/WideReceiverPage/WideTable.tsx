@@ -33,33 +33,31 @@ const WideTable: React.FC<TableRowProps> = ({
   return (
     <>
       <tr>
-        <td className="p-0">
-          <div className={`${bgClass} h-16 whitespace-nowrap`}>
-            <div className="flex h-full items-center justify-center gap-2.5">
-              <div>
-                <Image
-                  width={30}
-                  height={30}
-                  unoptimized
-                  src={imgSrc}
-                  alt={alt}
-                />
+        <td className="w-[373px] p-0">
+          <div className="flex w-full items-center justify-between">
+            <div className={`${bgClass} h-16 w-full whitespace-nowrap`}>
+              <div className="flex h-full items-center justify-center gap-2.5">
+                <div>
+                  <Image
+                    width={30}
+                    height={30}
+                    unoptimized
+                    src={imgSrc}
+                    alt={alt}
+                  />
+                </div>
+                <p className="text-sm font-medium">{team}</p>
               </div>
-              <p className="text-sm font-medium">{team}</p>
             </div>
-          </div>
-        </td>
-        <td className="p-0">
-          <div className={`${bgClass} h-16`}>
-            <div className="flex h-full items-center justify-center gap-2.5">
-              <p className="text-sm font-medium">{games}</p>
+            <div className={`${bgClass} h-16 w-full`}>
+              <div className="flex h-full items-center justify-center gap-2.5">
+                <p className="text-sm font-medium">{games}</p>
+              </div>
             </div>
-          </div>
-        </td>
-        <td className="p-0 pr-1.5">
-          <div className={`${bgClass} h-16`}>
-            <div className="flex h-full items-center justify-center gap-2.5">
-              <p className="text-sm font-medium">{targetpergame}</p>
+            <div className={`${bgClass} h-16 w-full`}>
+              <div className="flex h-full items-center justify-center gap-2.5">
+                <p className="text-sm font-medium">{targetpergame}</p>
+              </div>
             </div>
           </div>
         </td>

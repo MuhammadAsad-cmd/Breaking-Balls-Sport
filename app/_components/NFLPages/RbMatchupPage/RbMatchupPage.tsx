@@ -140,39 +140,33 @@ const RbMatchupPage = () => {
 
   return (
     <>
-      <div className="mt-6 px-[34px]">
-        <h2 className="text-4xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue">
+      <div className="mt-6 overflow-hidden px-4 lg:px-[34px]">
+        <h2 className="text-3xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue md:text-4xl">
           RB Matchups
         </h2>
         <div className="mt-[46px]">
-          <div className="relative overflow-x-auto">
-            <table className="w-full border-collapse">
+          <div className="relative w-full overflow-x-auto">
+            <table className="w-full table-fixed">
               <thead className="text-center">
                 <tr>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
-                      Team
-                    </h4>
+                  <th scope="col" className="w-[193px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">Team</h4>
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
-                      Player
-                    </h4>
+                  <th scope="col" className="w-[252px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">Player</h4>
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
+                  <th scope="col" className="w-[193px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">
                       Opponent
                     </h4>
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
+                  <th scope="col" className="w-[244px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">
                       Opponent YPG Allowed
                     </h4>
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="whitespace-nowrap text-sm font-bold text-deepBlue">
-                      Rank
-                    </h4>
+                  <th scope="col" className="w-[244px] py-3">
+                    <h4 className="text-sm font-bold text-deepBlue">Rank</h4>
                   </th>
                 </tr>
               </thead>

@@ -28,7 +28,7 @@ const RbMatchTable: React.FC<TableRowProps> = ({
     <>
       <tr className="border-collapse">
         <td className="w-[193px] p-0 pr-1.5">
-          <div className="h-16 whitespace-nowrap">
+          <div className="h-16">
             <div
               className={`flex h-full items-center ${bgColor1} justify-center gap-2.5`}
             >
@@ -53,7 +53,7 @@ const RbMatchTable: React.FC<TableRowProps> = ({
           </div>
         </td>
         <td className={`w-[193px] p-0 pr-1.5`}>
-          <div className={`${bgColor1} h-16 whitespace-nowrap`}>
+          <div className={`${bgColor1} h-16`}>
             <div className="flex h-full items-center justify-center gap-2.5">
               <div>
                 <Image
@@ -70,14 +70,14 @@ const RbMatchTable: React.FC<TableRowProps> = ({
         </td>
         <td className="w-[244px] p-0 pr-1.5">
           <div
-            className={`flex h-16 items-center justify-center gap-2.5 whitespace-nowrap ${bgColorStats}`}
+            className={`flex h-16 items-center justify-center gap-2.5 ${bgColorStats}`}
           >
             <p className="text-sm font-medium">{stat1}</p>
           </div>
         </td>
         <td className="w-[244px] p-0">
           <div
-            className={`flex h-16 items-center justify-center gap-2.5 whitespace-nowrap ${bgColorStats}`}
+            className={`flex h-16 items-center justify-center gap-2.5 ${bgColorStats}`}
           >
             <p className="text-sm font-medium">{stat2}</p>
           </div>

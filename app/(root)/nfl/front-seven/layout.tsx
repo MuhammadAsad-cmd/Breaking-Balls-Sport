@@ -3,15 +3,13 @@ import { ReactNode, useState } from "react";
 import NflSidebar from "@/app/_components/Sidebar/NflSidebar/NflSidebar";
 import NflNavbar from "@/app/_components/Navbar/NflNavbar";
 
-interface RunningbackLayoutProps {
+interface TightEndlayoutProps {
   children: ReactNode;
 }
 
-export default function RunningbackLayout({
-  children,
-}: RunningbackLayoutProps) {
-  const [selectedTab, setSelectedTab] = useState("Running Backs");
-  const [sidebarOpen, setSidebarOpen] = useState(false); // State for sidebar open/close
+export default function TightEndlayout({ children }: TightEndlayoutProps) {
+  const [selectedTab, setSelectedTab] = useState("Front Seven");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const getSidebarTabs = () => {
     switch (selectedTab) {
@@ -22,7 +20,10 @@ export default function RunningbackLayout({
             label: "Redzone Rushing",
             href: "/nfl/running-backs/redzone-rushing",
           },
-          { label: "Receiving Stats", href: "/nfl/running-backs/rb-receiving" },
+          {
+            label: "Receiving Stats",
+            href: "/nfl/running-backs/redzone-rushing",
+          },
         ];
       case "Wide Receivers":
         return [

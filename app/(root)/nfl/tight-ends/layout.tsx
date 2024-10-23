@@ -9,6 +9,7 @@ interface TightEndlayoutProps {
 
 export default function TightEndlayout({ children }: TightEndlayoutProps) {
   const [selectedTab, setSelectedTab] = useState("Tight Ends");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const getSidebarTabs = () => {
     switch (selectedTab) {
@@ -33,6 +34,11 @@ export default function TightEndlayout({ children }: TightEndlayoutProps) {
           },
         ];
       case "Tight Ends":
+        return [
+          { label: "TE Matchups", href: "/nfl/tight-ends/te-matchups" },
+          { label: "Tight End Stats", href: "/nfl/tight-ends/tight-end-stats" },
+        ];
+      case "Front Seven":
       default:
         return [
           { label: "TE Matchups", href: "/nfl/tight-ends/te-matchups" },
@@ -44,10 +50,13 @@ export default function TightEndlayout({ children }: TightEndlayoutProps) {
   return (
     <>
       <div className="flex h-full">
-        <div className="sticky top-0 h-full min-h-[100vh] w-full max-w-[230px] bg-lightGray">
-          <NflSidebar tabs={getSidebarTabs()} />
+        {/* Sidebar */}
+        <div className="sticky top-0 hidden h-full min-h-[100vh] w-full max-w-[230px] bg-lightGray lg:block">
+          <NflSidebar title={selectedTab} tabs={getSidebarTabs()} />
         </div>
-        <div className="mb-14 w-full">
+
+        {/* Main Content */}
+        <div className="mb-14 w-full overflow-hidden">
           <NflNavbar
             tabs={[
               {
@@ -59,9 +68,12 @@ export default function TightEndlayout({ children }: TightEndlayoutProps) {
                 href: "/nfl/wide-receivers/wr-matchups",
               },
               { label: "Tight Ends", href: "/nfl/tight-ends/te-matchups" },
+              { label: "Front Seven", href: "/nfl/front-seven/te-matchups" },
             ]}
             selectedTab={selectedTab}
             setSelectedTab={setSelectedTab}
+            sidebarOpen={sidebarOpen} // Pass sidebarOpen state
+            setSidebarOpen={setSidebarOpen} // Pass setSidebarOpen function
           />
           {children}
         </div>

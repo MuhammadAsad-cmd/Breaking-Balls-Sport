@@ -1,13 +1,42 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { BsThreeDots } from "react-icons/bs";
 import Navlink from "../Navlink/Navlink";
+import { IoMenu } from "react-icons/io5";
+import MenuSidebar from "../Sidebar/MenuSidebar";
+import { useEffect, useState } from "react";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
+  const [isMenuSidebarOpen, setIsMenuSidebarOpen] = useState<boolean>(false);
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
+
+  const toggleMenuSidebar = (state: boolean) => {
+    setIsMenuSidebarOpen(state);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== "undefined") {
+        const currentScrollY = window.scrollY;
+
+        setLastScrollY(currentScrollY); // Just track scrollY
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <>
       <div className="NavbarShadow">
-        <div className="container mx-auto w-full max-w-[1208px]">
+        <div className="container mx-auto w-full max-w-[1208px] px-4">
           <div className="flex w-full items-center justify-between">
             <Link href="/" className="flex cursor-pointer items-center">
               <div>
@@ -21,22 +50,59 @@ const NavBar = () => {
                   priority
                 />
               </div>
-              <h1 className="text-[19px] font-extrabold italic text-deepBlue">
+              <h1 className="mt-2 hidden text-[19px] font-extrabold italic text-deepBlue md:block">
                 Breaking Balls Sports
               </h1>
             </Link>
             <div>
-              <ul className="flex items-center gap-x-9">
+              <ul className="hidden items-center gap-x-9 lg:flex">
                 <li>
                   <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
                     NBA
                   </p>
                 </li>
-                <Navlink href="/nfl/running-backs/rb-matchups">
-                  <p className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue">
-                    NFL
-                  </p>
-                </Navlink>
+                {/* NFL with Dropdown */}
+                <li className="group relative">
+                  <Navlink href="/nfl/running-backs/rb-matchups">
+                    <p className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue">
+                      NFL
+                    </p>
+                  </Navlink>
+                  {/* Dropdown */}
+                  <div className="DropdownShadow absolute left-0 right-0 top-4 z-40 mt-2 hidden w-[204px] rounded-b-[11px] bg-white group-hover:block">
+                    <div className="h-1 w-full rounded-t-2xl bg-skyBlue"></div>{" "}
+                    <ul className="rounded-b-[11px]">
+                      <li>
+                        <Navlink href="/nfl/running-backs/rb-matchups">
+                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                            Running Backs
+                          </p>
+                        </Navlink>
+                      </li>
+                      <li>
+                        <Navlink href="/nfl/wide-receivers/wr-matchups">
+                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                            Wide Receivers
+                          </p>
+                        </Navlink>
+                      </li>
+                      <li>
+                        <Navlink href="/nfl/tight-ends/te-matchups">
+                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                            Tight Ends
+                          </p>
+                        </Navlink>
+                      </li>
+                      <li>
+                        <Navlink href="/nfl/front-seven/front-seven">
+                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                            Front Seven
+                          </p>
+                        </Navlink>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <li>
                   <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
                     WNBA
@@ -47,11 +113,7 @@ const NavBar = () => {
                     MLB
                   </p>
                 </Navlink>
-                <li>
-                  <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
-                    Soccer
-                  </p>
-                </li>
+
                 <li>
                   <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
                     NCAAF
@@ -64,8 +126,14 @@ const NavBar = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex items-center gap-[30px]">
-              <div className="flex items-center gap-[13px]">
+            <div className="flex items-center gap-6 lg:gap-[30px]">
+              <div className="hidden items-center gap-[13px] xl:flex">
+                <div className="flex h-6 w-6 cursor-pointer items-center justify-center rounded-md border-2 border-deepBlue text-base text-deepBlue">
+                  <FaYoutube />
+                </div>
+                <div className="flex h-6 w-6 cursor-pointer items-center justify-center rounded-md border-2 border-deepBlue text-base text-deepBlue">
+                  <FaTiktok />
+                </div>
                 <div>
                   <Image
                     width={24}
@@ -88,25 +156,26 @@ const NavBar = () => {
                     priority
                   />
                 </div>
-                <div>
-                  <Image
-                    width={24}
-                    height={24}
-                    unoptimized
-                    src="/images/facebook.png"
-                    alt="facebook"
-                    className="h-full w-full cursor-pointer object-cover"
-                    priority
-                  />
-                </div>
               </div>
-              <button className="flex h-10 items-center justify-center rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white">
+              <button className="flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white">
                 Join Today
               </button>
+              <div
+                onClick={() => toggleMenuSidebar(true)}
+                className="hidden h-10 w-10 cursor-pointer items-center justify-center rounded-md border text-3xl max-lg:flex"
+              >
+                <IoMenu />
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Pass the isOpen state and toggleSidebar function as props */}
+      <MenuSidebar
+        isOpen={isMenuSidebarOpen}
+        toggleMenuSidebar={toggleMenuSidebar}
+      />
     </>
   );
 };

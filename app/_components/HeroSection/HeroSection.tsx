@@ -1,13 +1,86 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const HeroSection = () => {
+import "swiper/css";
+
+const HeroSection: React.FC = () => {
+  const logos = [
+    {
+      src: "/images/image-11.png",
+      alt: "Cleveland-Indians-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-10.png",
+      alt: "Toronto-Blue-Jays-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-9.png",
+      alt: "Texas-Rangers-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-8.png",
+      alt: "Baltimore-Orioles-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-7.png",
+      alt: "Chicago-White-Sox-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-6.png",
+      alt: "Los-Angeles-Angels-of-Anaheim-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-5.png",
+      alt: "San-Francisco-Giants-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-4.png",
+      alt: "Philadelphia-Phillies-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-3.png",
+      alt: "Frame-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image-2.png",
+      alt: "Tampa-Bay-Rays-logo",
+      width: 55,
+      height: 55,
+    },
+    {
+      src: "/images/image.png",
+      alt: "Seattle-Mariners-logo",
+      width: 55,
+      height: 55,
+    },
+  ];
+
   return (
     <>
-      <div className="container mx-auto w-full max-w-[1208px]">
-        <div className="my-[142px] flex h-full w-full gap-5">
-          <div>
-            <h2 className="text-[44px] font-extrabold leading-[54px] text-deepBlue">
+      <div className="container mx-auto w-full max-w-[1208px] px-4">
+        <div className="my-20 flex h-full w-full flex-col items-center gap-5 lg:flex-row xl:my-[142px]">
+          <div className="">
+            <h2 className="text-[44px] font-extrabold leading-[54px] text-deepBlue max-lg:max-w-[564px]">
               In-Depth Fantasy and Betting Tools for{" "}
               <span className="text-skyBlue"> Every Team </span>{" "}
             </h2>
@@ -24,7 +97,7 @@ const HeroSection = () => {
             </button>
           </div>
           <div className="flex-shrink-0">
-            <div className="max-h-[358px] max-w-[555px]">
+            <div className="lg:max-h-[358px] lg:max-w-[555px]">
               <Image
                 width={555}
                 height={358}
@@ -39,122 +112,62 @@ const HeroSection = () => {
       </div>
 
       <div className="h-[81px] bg-customGray">
-        <div className="container mx-auto flex h-full w-full max-w-[1208px] items-center justify-between">
-          <div>
-            <Image
-              width={36}
-              height={39}
-              unoptimized
-              src="/images/Cleveland-Indians-02 1.svg"
-              alt="Cleveland-Indians-logo"
-              className="cursor-pointer"
-            />
+        <div className="container mx-auto h-full w-full max-w-[1208px] px-4">
+          {/* Swiper for small screens */}
+          <div className="h-full xl:hidden">
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={10}
+              pagination={{ clickable: true }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 4,
+                },
+                768: {
+                  slidesPerView: 6,
+                },
+                1024: {
+                  slidesPerView: 8,
+                },
+              }}
+              className="h-full"
+            >
+              {logos.map((logo, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex h-full items-center justify-center">
+                    <Image
+                      width={logo.width}
+                      height={logo.height}
+                      unoptimized
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="cursor-pointer"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-          <div>
-            <Image
-              width={55}
-              height={55}
-              unoptimized
-              src="/images/Toronto-Blue-Jays-Cap-Insignia-01 1.svg"
-              alt="Toronto-Blue-Jays-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={43}
-              height={43}
-              unoptimized
-              src="/images/Texas-Rangers-Insignia-01 1.svg"
-              alt="Texas-Rangers-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={51}
-              height={51}
-              unoptimized
-              src="/images/Baltimore-Orioles-01 1.svg"
-              alt="Baltimore-Orioles-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={40}
-              height={40}
-              unoptimized
-              src="/images/Chicago-White-Sox-01 1.svg"
-              alt="Chicago-White-Sox-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={51}
-              height={51}
-              unoptimized
-              src="/images/Los-Angeles-Angels-of-Anaheim-01 1.svg"
-              alt="Los-Angeles-Angels-of-Anaheim-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={36}
-              height={39}
-              unoptimized
-              src="/images/San-Francisco-Giants-02 1.svg"
-              alt="San-Francisco-Giants-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={36}
-              height={39}
-              unoptimized
-              src="/images/Philadelphia-Phillies-Insignia-01 1.svg"
-              alt="Philadelphia-Phillies-Insignia-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={56}
-              height={46}
-              unoptimized
-              src="/images/Frame 1391.svg"
-              alt="Frame-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={53}
-              height={53}
-              unoptimized
-              src="/images/Tampa-Bay-Rays-02 1.svg"
-              alt="Tampa-Bay-Rays-logo"
-              className="cursor-pointer"
-            />
-          </div>
-          <div>
-            <Image
-              width={47}
-              height={42}
-              unoptimized
-              src="/images/Seattle-Mariners-Insignia-01 1.svg"
-              alt="Seattle-Mariners-Insignia-logo"
-              className="cursor-pointer"
-            />
+
+          {/* Flex layout for larger screens */}
+          <div className="hidden h-full w-full items-center justify-between xl:flex">
+            {logos.map((logo, index) => (
+              <div key={index}>
+                <Image
+                  width={logo.width}
+                  height={logo.height}
+                  unoptimized
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="cursor-pointer"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
-
-      <div className="container mx-auto mb-8 mt-[38px] w-full max-w-[1208px]">
-        <div className="flex w-full items-center gap-[128px] pb-12 pt-3">
+      <div className="container mx-auto mb-8 mt-[38px] w-full max-w-[1208px] px-4">
+        <div className="flex w-full flex-col items-center gap-y-12 pb-12 pt-3 lg:flex-row lg:gap-[128px]">
           <div className="flex-shrink-0">
             <Image
               width={498}
@@ -183,17 +196,17 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="w-full bg-[#F7F7F7] py-[130px]">
-        <div className="container mx-auto flex w-full max-w-[1208px] gap-[184px]">
+      <div className="w-full bg-[#F7F7F7] py-20 lg:py-[130px]">
+        <div className="container mx-auto flex w-full max-w-[1208px] flex-col items-center gap-y-12 px-4 lg:flex-row lg:gap-[184px]">
           <div>
             <button className="h-10 whitespace-nowrap rounded-full border-2 border-paleOrange px-4 text-sm font-extrabold text-deepBlue">
               Start Betting Smarter!
             </button>
-            <h2 className="mt-3 text-4xl font-extrabold leading-[48px] text-deepBlue">
+            <h2 className="mt-3 text-4xl font-extrabold leading-[48px] text-deepBlue max-lg:max-w-[564px]">
               Start Placing Analytical Data Driven Bets{" "}
               <span className="text-skyBlue"> TODAY!</span>
             </h2>
-            <p className="mt-9 text-base font-medium text-[#554871]">
+            <p className="mt-9 text-base font-medium text-[#554871] max-lg:max-w-[564px]">
               Leveraging our data partners, we craft cutting-edge plays to
               elevate your chances of success. Their insights, combined with our
               knowledge, keep us a step ahead in this ever-evolving game.
@@ -215,7 +228,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto mt-[52px] flex w-full max-w-[1208px] items-center gap-20 border-b border-[#D9DBDF] pb-[100px] pt-[75px]">
+      <div className="container mx-auto mt-10 flex w-full max-w-[1208px] flex-col items-center gap-y-12 border-b border-[#D9DBDF] px-4 pb-[100px] pt-[75px] lg:mt-[52px] lg:flex-row lg:gap-20">
         <div className="flex-shrink-0">
           <Image
             width={555}
@@ -227,13 +240,13 @@ const HeroSection = () => {
           />
         </div>
         <div>
-          <h2 className="text-4xl font-extrabold leading-[44px] text-deepBlue">
+          <h2 className="text-4xl font-extrabold leading-[44px] text-deepBlue max-lg:max-w-[564px]">
             Engage with others in the sports community
           </h2>
           <p className="mt-[13px] text-base font-extrabold text-skyBlue">
             Be a part of the conversation
           </p>
-          <p className="mt-[30px] text-justify text-base font-medium text-[#554871]">
+          <p className="mt-[30px] text-justify text-base font-medium text-[#554871] max-lg:max-w-[564px]">
             Get set to join a dynamic team of sports fanatics! In the process of
             building a community to connect with fellow enthusiasts, share
             strategies, plays and more in our active community. Elevate your
@@ -243,8 +256,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="mb-[123px] mt-[118px]">
-        <div className="container mx-auto flex w-full max-w-[1208px] flex-col items-center justify-center">
+      {/* <div className="mb-20 mt-20 lg:mb-[123px] lg:mt-[118px]">
+        <div className="container mx-auto flex w-full max-w-[1208px] flex-col items-center justify-center px-4">
           <p className="text-base font-extrabold text-skyBlue">
             Follow the experts
           </p>
@@ -258,7 +271,7 @@ const HeroSection = () => {
             rewarding experience.
           </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="BG-Gradient relative">
         <Image
@@ -267,10 +280,10 @@ const HeroSection = () => {
           unoptimized
           src="/images/Rectangle 23817.png"
           alt="image"
-          className="w-full object-cover"
+          className="min-h-[300px] w-full object-cover max-lg:h-full"
         />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="max-w-[678px] text-center text-[44px] font-extrabold leading-[64px] text-white">
+        <div className="absolute inset-0 flex items-center justify-center px-4">
+          <h2 className="text-center text-4xl font-extrabold leading-[44px] text-white md:text-[44px] md:leading-[64px] lg:max-w-[678px]">
             TURN SPORTS BETTING INTO YOUR SIDE HUSTLE
           </h2>
         </div>

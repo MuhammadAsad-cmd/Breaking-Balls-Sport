@@ -151,11 +151,11 @@ const NrfiPage = () => {
 
   return (
     <>
-      <div className="mt-6 overflow-hidden px-[34px]">
-        <h2 className="text-4xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue">
+      <div className="mt-6 w-full overflow-hidden px-4 lg:px-8">
+        <h2 className="text-2xl font-extrabold uppercase leading-tight text-deepBlue lg:text-4xl">
           NRFI - YRFI
         </h2>
-        <div className="mt-[46px]">
+        <div className="mt-5 md:mt-[46px]">
           <div className="relative w-full overflow-x-auto">
             <table className="w-full table-fixed">
               <thead className="text-center">

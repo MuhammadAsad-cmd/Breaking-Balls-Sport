@@ -234,11 +234,11 @@ const BattervPitcherPage = () => {
   ];
   return (
     <>
-      <div className="mt-6 overflow-hidden px-8">
-        <h2 className="text-4xl font-extrabold uppercase leading-tight text-deepBlue">
+      <div className="mt-6 overflow-hidden px-4 lg:px-8">
+        <h2 className="text-2xl font-extrabold uppercase leading-tight text-deepBlue lg:text-4xl">
           BATTER VS PITCHER
         </h2>
-        <div className="mt-12">
+        <div className="mt-5 lg:mt-12">
           <div className="relative w-full overflow-x-auto">
             <table className="w-full table-fixed">
               <thead className="text-center">

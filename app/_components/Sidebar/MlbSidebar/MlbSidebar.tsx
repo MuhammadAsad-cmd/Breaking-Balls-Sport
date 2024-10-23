@@ -6,11 +6,11 @@ interface TabsTypes {
   href: string;
 }
 
-const NflSidebar = ({ title, tabs }: { title: string; tabs: TabsTypes[] }) => {
+const MlbSidebar = ({ tabs }: { tabs: TabsTypes[] }) => {
   return (
     <>
       <div className="sticky top-0 mt-[51px] px-[26px]">
-        <h2 className="text-base font-bold text-deepBlue">{title}</h2>
+        <h2 className="text-base font-bold text-deepBlue">MLB Research</h2>
         <div className="mt-[7px] w-full rounded-md border border-lightGrayAlt p-3">
           <ul className="space-y-2">
             {tabs.map((item, index) => (
@@ -32,4 +32,4 @@ const NflSidebar = ({ title, tabs }: { title: string; tabs: TabsTypes[] }) => {
   );
 };
 
-export default NflSidebar;
+export default MlbSidebar;

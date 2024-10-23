@@ -97,7 +97,7 @@ const RedZoneDefenceTable: React.FC = ({}) => {
   ];
   return (
     <>
-      <div className="mt-[46px]">
+      <div className="mt-5 lg:mt-[46px]">
         <div className="relative overflow-x-auto">
           <table className="w-full border-collapse">
             <thead className="text-center">

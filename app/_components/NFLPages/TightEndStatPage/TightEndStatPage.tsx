@@ -127,24 +127,22 @@ const TightEndStatPage = () => {
   ];
   return (
     <>
-      <div className="mt-6 w-full px-[34px]">
-        <h2 className="text-4xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue">
+      <div className="mt-6 w-full px-4 lg:px-[34px]">
+        <h2 className="text-2xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue lg:text-4xl">
           TIGHT END STATS
         </h2>
 
-        <div className="mt-[46px]">
-          <div className="relative overflow-x-auto">
-            <table className="w-full border-collapse">
+        <div className="mt-5 lg:mt-[46px]">
+          <div className="relative w-full overflow-x-auto">
+            <table className="w-full table-fixed border-collapse">
               <thead className="text-center">
                 <tr>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="text-sm font-bold text-deepBlue">Team</h4>
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="text-sm font-bold text-deepBlue">Name</h4>
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    <h4 className="text-sm font-bold text-deepBlue">Games</h4>
+                  <th scope="col" className="w-[373px] px-6 py-3">
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-sm font-bold text-deepBlue">Team</h4>
+                      <h4 className="text-sm font-bold text-deepBlue">Name</h4>
+                      <h4 className="text-sm font-bold text-deepBlue">Games</h4>
+                    </div>
                   </th>
                   <th scope="col" className="w-[103px] py-3">
                     <h4 className="text-sm font-bold text-deepBlue">

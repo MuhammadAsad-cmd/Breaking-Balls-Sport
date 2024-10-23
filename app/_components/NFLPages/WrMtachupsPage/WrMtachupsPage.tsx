@@ -112,14 +112,14 @@ const WrMtachupsPage = () => {
 
   return (
     <>
-      <div className="mt-6 w-full px-[34px]">
-        <h2 className="text-4xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue">
+      <div className="mt-6 w-full overflow-hidden px-4 lg:px-[34px]">
+        <h2 className="text-2xl font-extrabold uppercase leading-[64px] tracking-[0.15px] text-deepBlue lg:text-4xl">
           wr Matchups
         </h2>
 
-        <div className="mt-[46px]">
+        <div className="mt-5 lg:mt-[46px]">
           <div className="relative overflow-x-auto">
-            <table className="w-full border-collapse">
+            <table className="w-full table-fixed border-collapse">
               <thead className="text-center">
                 <tr>
                   <th scope="col" className="w-[193px] py-3">
