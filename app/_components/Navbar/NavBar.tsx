@@ -72,34 +72,26 @@ const NavBar: React.FC = () => {
                   <div className="DropdownShadow absolute left-0 right-0 top-4 z-40 mt-2 hidden w-[204px] rounded-b-[11px] bg-white group-hover:block">
                     <div className="h-1 w-full rounded-t-2xl bg-skyBlue"></div>{" "}
                     <ul className="rounded-b-[11px]">
-                      <li>
-                        <Navlink href="/nfl/running-backs/rb-matchups">
-                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
-                            Running Backs
-                          </p>
-                        </Navlink>
-                      </li>
-                      <li>
-                        <Navlink href="/nfl/wide-receivers/wr-matchups">
-                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
-                            Wide Receivers
-                          </p>
-                        </Navlink>
-                      </li>
-                      <li>
-                        <Navlink href="/nfl/tight-ends/te-matchups">
-                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
-                            Tight Ends
-                          </p>
-                        </Navlink>
-                      </li>
-                      <li>
-                        <Navlink href="/nfl/front-seven/front-seven">
-                          <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
-                            Front Seven
-                          </p>
-                        </Navlink>
-                      </li>
+                      <Navlink href="/nfl/running-backs/rb-matchups">
+                        <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                          Running Backs
+                        </p>
+                      </Navlink>
+                      <Navlink href="/nfl/wide-receivers/wr-matchups">
+                        <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                          Wide Receivers
+                        </p>
+                      </Navlink>
+                      <Navlink href="/nfl/tight-ends/te-matchups">
+                        <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                          Tight Ends
+                        </p>
+                      </Navlink>
+                      <Navlink href="/nfl/front-seven/team-advantage">
+                        <p className="px-4 py-2 text-base font-medium text-[#6A919F]">
+                          Front Seven
+                        </p>
+                      </Navlink>
                     </ul>
                   </div>
                 </li>

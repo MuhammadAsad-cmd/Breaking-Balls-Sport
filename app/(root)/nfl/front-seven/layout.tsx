@@ -41,8 +41,15 @@ export default function TightEndlayout({ children }: TightEndlayoutProps) {
       case "Front Seven":
       default:
         return [
-          { label: "TE Matchups", href: "/nfl/tight-ends/te-matchups" },
-          { label: "Tight End Stats", href: "/nfl/tight-ends/tight-end-stats" },
+          { label: "Team Advantages", href: "/nfl/front-seven/team-advantage" },
+          {
+            label: "Rushing Advantages",
+            href: "/nfl/front-seven/rushing-advantage",
+          },
+          {
+            label: "Passing Advantages",
+            href: "/nfl/front-seven/passing-advantage",
+          },
         ];
     }
   };
@@ -51,7 +58,7 @@ export default function TightEndlayout({ children }: TightEndlayoutProps) {
     <>
       <div className="flex h-full">
         {/* Sidebar */}
-        <div className="sticky top-0 hidden h-full min-h-[100vh] w-full max-w-[230px] bg-lightGray lg:block">
+        <div className="sticky top-0 hidden h-full min-h-[100vh] w-full max-w-[250px] bg-lightGray lg:block">
           <NflSidebar title={selectedTab} tabs={getSidebarTabs()} />
         </div>
 
@@ -68,7 +75,7 @@ export default function TightEndlayout({ children }: TightEndlayoutProps) {
                 href: "/nfl/wide-receivers/wr-matchups",
               },
               { label: "Tight Ends", href: "/nfl/tight-ends/te-matchups" },
-              { label: "Front Seven", href: "/nfl/front-seven/te-matchups" },
+              { label: "Front Seven", href: "/nfl/front-seven/team-advantage" },
             ]}
             selectedTab={selectedTab}
             setSelectedTab={setSelectedTab}

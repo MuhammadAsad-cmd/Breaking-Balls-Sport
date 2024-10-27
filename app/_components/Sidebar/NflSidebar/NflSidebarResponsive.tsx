@@ -1,6 +1,7 @@
 // NflSidebarResponsive.tsx
 import React from "react";
 import Link from "next/link";
+import Sidelink from "../../Navlink/Sidelink";
 
 interface Tab {
   label: string;
@@ -10,11 +11,13 @@ interface Tab {
 interface NflSidebarResponsiveProps {
   title: string;
   tabs: Tab[];
+  setSidebarOpen: (open: boolean) => void;
 }
 
 const NflSidebarResponsive: React.FC<NflSidebarResponsiveProps> = ({
   title,
   tabs,
+  setSidebarOpen,
 }) => {
   return (
     <>
@@ -23,16 +26,17 @@ const NflSidebarResponsive: React.FC<NflSidebarResponsiveProps> = ({
         <div className="mt-[7px] w-full rounded-md border border-lightGrayAlt p-3">
           <ul className="space-y-2">
             {tabs.map((tab, index) => (
-              <li
+              <div
                 key={index}
+                onClick={() => setSidebarOpen(false)}
                 className="cursor-pointer border-b border-lightGray2 pb-2"
               >
-                <Link href={tab.href}>
+                <Sidelink href={tab.href}>
                   <p className="text-base font-medium text-gray-700 hover:text-deepBlue">
                     {tab.label}
                   </p>
-                </Link>
-              </li>
+                </Sidelink>
+              </div>
             ))}
           </ul>
         </div>

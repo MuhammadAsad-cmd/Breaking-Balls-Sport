@@ -68,8 +68,15 @@ const NflNavbar: React.FC<NflNavbarProps> = ({
       case "Front Seven":
       default:
         return [
-          { label: "Defensive Stats", href: "/nfl/front-seven/stats" },
-          { label: "Matchups", href: "/nfl/front-seven/matchups" },
+          { label: "Team Advantages", href: "/nfl/front-seven/team-advantage" },
+          {
+            label: "Rushing Advantages",
+            href: "/nfl/front-seven/rushing-advantage",
+          },
+          {
+            label: "Passing Advantages",
+            href: "/nfl/front-seven/passing-advantage",
+          },
         ];
     }
   };
@@ -156,7 +163,11 @@ const NflNavbar: React.FC<NflNavbarProps> = ({
         }`}
       >
         {/* Pass the related sidebar tabs based on selectedTab */}
-        <NflSidebarResponsive title={selectedTab} tabs={getSidebarTabs()} />
+        <NflSidebarResponsive
+          setSidebarOpen={setSidebarOpen}
+          title={selectedTab}
+          tabs={getSidebarTabs()}
+        />
       </div>
 
       {/* Overlay when sidebar is open */}

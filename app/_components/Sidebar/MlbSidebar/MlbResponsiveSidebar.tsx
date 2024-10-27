@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import Navlink from "../../Navlink/Navlink";
+import Sidelink from "../../Navlink/Sidelink";
 
 interface Tab {
   label: string;
@@ -21,17 +23,17 @@ const MlbResponsiveSidebar: React.FC<MlbResponsiveSidebarProps> = ({
       <div className="mt-[7px] w-full rounded-md border border-lightGrayAlt p-3">
         <ul className="space-y-2">
           {tabs.map((tab, index) => (
-            <li
+            <div
               key={index}
               onClick={closeSidebar}
               className="cursor-pointer border-b border-lightGray2 pb-2"
             >
-              <Link href={tab.href}>
+              <Sidelink href={tab.href}>
                 <p className="text-base font-medium text-gray-700 hover:text-deepBlue">
                   {tab.label}
                 </p>
-              </Link>
-            </li>
+              </Sidelink>
+            </div>
           ))}
         </ul>
       </div>

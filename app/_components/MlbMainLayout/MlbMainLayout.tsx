@@ -54,7 +54,7 @@ const MlbMainLayout: React.FC<MlbMainLayoutProps> = ({ children }) => {
         />
       </div>
       <div className="flex h-full">
-        <div className="sticky top-0 hidden h-full min-h-[100vh] w-full max-w-[230px] bg-lightGray lg:block">
+        <div className="sticky top-0 hidden h-full min-h-[100vh] w-full max-w-[250px] bg-lightGray lg:block">
           <MlbSidebar tabs={getSidebarTabs()} />
         </div>
 

@@ -53,7 +53,7 @@ export default function WideReceivelayout({
     <>
       <div className="flex h-full">
         {/* Sidebar */}
-        <div className="sticky top-0 hidden h-full min-h-[100vh] w-full max-w-[230px] bg-lightGray lg:block">
+        <div className="sticky top-0 hidden h-full min-h-[100vh] w-full max-w-[250px] bg-lightGray lg:block">
           <NflSidebar title={selectedTab} tabs={getSidebarTabs()} />
         </div>
 
@@ -70,7 +70,7 @@ export default function WideReceivelayout({
                 href: "/nfl/wide-receivers/wr-matchups",
               },
               { label: "Tight Ends", href: "/nfl/tight-ends/te-matchups" },
-              { label: "Front Seven", href: "/nfl/front-seven/te-matchups" },
+              { label: "Front Seven", href: "/nfl/front-seven/team-advantage" },
             ]}
             selectedTab={selectedTab}
             setSelectedTab={setSelectedTab}
