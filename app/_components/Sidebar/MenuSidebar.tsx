@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { RxCross1 } from "react-icons/rx";
 import Navlink from "../Navlink/Navlink";
 import Image from "next/image";
