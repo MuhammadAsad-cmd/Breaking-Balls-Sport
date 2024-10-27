@@ -40,6 +40,19 @@ const NflNavbar: React.FC<NflNavbarProps> = ({
     };
   }, []);
 
+  useEffect(() => {
+    if (sidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Clean up on component unmount
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [sidebarOpen]);
+
   // Get relevant sidebar tabs based on selectedTab
   const getSidebarTabs = () => {
     switch (selectedTab) {
@@ -175,8 +188,7 @@ const NflNavbar: React.FC<NflNavbarProps> = ({
         <div
           className="fixed inset-0 z-20 bg-black opacity-50"
           onClick={() => {
-            setSidebarOpen(false); // Use setSidebarOpen from props
-            document.body.style.overflow = "auto"; // Re-enable scrolling
+            setSidebarOpen(false);
           }}
         ></div>
       )}
