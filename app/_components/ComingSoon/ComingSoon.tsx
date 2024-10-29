@@ -3,9 +3,11 @@ import React from "react";
 const ComingSoon = () => {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-center bg-deepBlue text-paleOrange">
-        <h1 className="mb-4 text-5xl font-bold">Coming Soon!</h1>
-        <p className="mx-auto mb-8 max-w-[600px] text-center text-xl">
+      <div className="flex min-h-screen flex-col items-center justify-center bg-deepBlue px-4 text-paleOrange">
+        <h1 className="mb-4 text-center text-4xl font-bold md:text-5xl">
+          Coming Soon!
+        </h1>
+        <p className="mx-auto mb-8 max-w-[600px] text-center text-lg md:text-xl">
           🚧 Exciting things are on the way! We can't wait to share our journey
           with you.
         </p>

@@ -78,9 +78,9 @@ const HeroSection: React.FC = () => {
   return (
     <>
       <div className="container mx-auto w-full max-w-[1208px] px-4">
-        <div className="my-20 flex h-full w-full flex-col items-center gap-5 lg:flex-row xl:my-[142px]">
+        <div className="my-14 flex h-full w-full flex-col items-center gap-5 md:my-20 lg:flex-row xl:my-[142px]">
           <div className="">
-            <h2 className="text-[44px] font-extrabold leading-[54px] text-deepBlue max-lg:max-w-[564px]">
+            <h2 className="text-3xl font-extrabold text-deepBlue max-lg:max-w-[564px] md:text-[44px] md:leading-[48px]">
               In-Depth Fantasy and Betting Tools for{" "}
               <span className="text-skyBlue"> Every Team </span>{" "}
             </h2>
@@ -185,7 +185,7 @@ const HeroSection: React.FC = () => {
                 Start Betting Smarter!
               </p>
             </div>
-            <h2 className="text-4xl font-extrabold leading-[64px] text-deepBlue">
+            <h2 className="text-3xl font-extrabold text-deepBlue md:text-4xl">
               Multi-Sport HUB
             </h2>
             <p className="mt-[11px] max-w-[530px] text-justify text-base font-medium text-[#554871]">
@@ -197,12 +197,12 @@ const HeroSection: React.FC = () => {
       </div>
 
       <div className="w-full bg-[#F7F7F7] py-20 lg:py-[130px]">
-        <div className="container mx-auto flex w-full max-w-[1208px] flex-col items-center gap-y-12 px-4 lg:flex-row lg:gap-[184px]">
+        <div className="container mx-auto flex w-full max-w-[1208px] flex-col items-center gap-14 gap-y-12 px-4 lg:flex-row xl:gap-[184px]">
           <div>
             <button className="h-10 whitespace-nowrap rounded-full border-2 border-paleOrange px-4 text-sm font-extrabold text-deepBlue">
               Start Betting Smarter!
             </button>
-            <h2 className="mt-3 text-4xl font-extrabold leading-[48px] text-deepBlue max-lg:max-w-[564px]">
+            <h2 className="mt-3 text-3xl font-extrabold text-deepBlue max-lg:max-w-[564px] md:text-4xl">
               Start Placing Analytical Data Driven Bets{" "}
               <span className="text-skyBlue"> TODAY!</span>
             </h2>
@@ -228,7 +228,7 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto mt-10 flex w-full max-w-[1208px] flex-col items-center gap-y-12 border-b border-[#D9DBDF] px-4 pb-[100px] pt-[75px] lg:mt-[52px] lg:flex-row lg:gap-20">
+      <div className="container mx-auto mt-10 flex w-full max-w-[1208px] flex-col items-center gap-10 gap-y-12 border-b border-[#D9DBDF] px-4 pb-[100px] pt-[75px] lg:mt-[52px] lg:flex-row xl:gap-20">
         <div className="flex-shrink-0">
           <Image
             width={555}
@@ -240,7 +240,7 @@ const HeroSection: React.FC = () => {
           />
         </div>
         <div>
-          <h2 className="text-4xl font-extrabold leading-[44px] text-deepBlue max-lg:max-w-[564px]">
+          <h2 className="text-3xl font-extrabold text-deepBlue max-lg:max-w-[564px] md:text-4xl">
             Engage with others in the sports community
           </h2>
           <p className="mt-[13px] text-base font-extrabold text-skyBlue">
@@ -280,12 +280,12 @@ const HeroSection: React.FC = () => {
           unoptimized
           src="/images/banner.jpg"
           alt="image"
-          className="h-auto max-h-[432px] w-full"
+          className="h-auto max-h-[432px] w-full max-md:object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-30" />{" "}
         {/* Overlay with opacity */}
         <div className="absolute inset-0 flex items-center justify-center px-4">
-          <h2 className="text-center text-3xl font-extrabold leading-10 text-white md:text-4xl md:text-[44px] md:leading-[64px] lg:max-w-[678px]">
+          <h2 className="text-center text-2xl font-extrabold uppercase leading-7 text-white md:text-4xl md:text-[44px] md:leading-[64px] lg:max-w-[678px]">
             TURN SPORTS BETTING INTO YOUR SIDE HUSTLE
           </h2>
         </div>

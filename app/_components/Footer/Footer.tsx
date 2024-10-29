@@ -30,7 +30,7 @@ const Footer = () => {
                 Contact us
               </li>
             </ul>
-            <ul className="flex items-center gap-[21px]">
+            <ul className="flex items-center gap-2 max-sm:flex-col sm:gap-[21px]">
               <li className="text-sm font-normal leading-6 text-white">
                 © 2024 Breaking Balls Sports
               </li>

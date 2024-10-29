@@ -150,7 +150,7 @@ const NavBar: React.FC = () => {
                   />
                 </Link>
               </div>
-              <button className="flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white">
+              <button className="hidden h-10 items-center justify-center whitespace-nowrap rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white md:flex">
                 Join Today
               </button>
               <div
