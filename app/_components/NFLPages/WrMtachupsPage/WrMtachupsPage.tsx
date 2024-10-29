@@ -126,7 +126,9 @@ const WrMtachupsPage = () => {
                     <h4 className="text-sm font-bold text-deepBlue">Team</h4>
                   </th>
                   <th scope="col" className="w-[243px] py-3">
-                    <h4 className="text-sm font-bold text-deepBlue">Player</h4>
+                    <h4 className="text-sm font-bold text-deepBlue">
+                      Target Player
+                    </h4>
                   </th>
                   <th scope="col" className="w-[193px] py-3">
                     <h4 className="text-sm font-bold text-deepBlue">

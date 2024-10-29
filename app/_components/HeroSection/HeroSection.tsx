@@ -273,17 +273,19 @@ const HeroSection: React.FC = () => {
         </div>
       </div> */}
 
-      <div className="BG-Gradient relative">
+      <div className="relative">
         <Image
           width={1000}
-          height={432}
+          height={350}
           unoptimized
-          src="/images/Rectangle 23817.png"
+          src="/images/banner.jpg"
           alt="image"
-          className="min-h-[300px] w-full object-cover max-lg:h-full"
+          className="h-auto max-h-[432px] w-full"
         />
+        <div className="absolute inset-0 bg-black opacity-30" />{" "}
+        {/* Overlay with opacity */}
         <div className="absolute inset-0 flex items-center justify-center px-4">
-          <h2 className="text-center text-4xl font-extrabold leading-[44px] text-white md:text-[44px] md:leading-[64px] lg:max-w-[678px]">
+          <h2 className="text-center text-3xl font-extrabold leading-10 text-white md:text-4xl md:text-[44px] md:leading-[64px] lg:max-w-[678px]">
             TURN SPORTS BETTING INTO YOUR SIDE HUSTLE
           </h2>
         </div>

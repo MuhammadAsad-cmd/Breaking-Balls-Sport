@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsTwitterX } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 
@@ -11,9 +12,13 @@ const Footer = () => {
               <FaTiktok className="text-2xl" /> Watch free plays
             </button>
             <button className="flex items-center justify-center gap-2 rounded-[10px] bg-white p-1.5 text-xs font-extrabold leading-5 text-deepBlue">
-              <div className="flex h-[27px] w-[27px] items-center justify-center rounded bg-deepBlue text-white">
+              <Link
+                href="https://x.com/BreaknBallsBets"
+                target="_blank"
+                className="flex h-[27px] w-[27px] items-center justify-center rounded bg-deepBlue text-white"
+              >
                 <BsTwitterX className="text-xl" />
-              </div>
+              </Link>
             </button>
           </div>
           <div className="mt-[31px] flex flex-col items-center justify-between gap-y-4 md:flex-row">

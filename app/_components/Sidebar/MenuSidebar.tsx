@@ -94,12 +94,7 @@ const MenuSidebar: React.FC<MenuSidebarProps> = ({
                 </h1>
               </Link>
               <div className="mt-5">
-                <ul className="flex flex-col gap-y-4">
-                  <li onClick={handleCloseSidebar}>
-                    <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
-                      NBA
-                    </p>
-                  </li>
+                <ul className="flex flex-col gap-y-5">
                   <Navlink href="/nfl/running-backs/rb-matchups">
                     <p
                       onClick={handleCloseSidebar}
@@ -108,11 +103,14 @@ const MenuSidebar: React.FC<MenuSidebarProps> = ({
                       NFL
                     </p>
                   </Navlink>
-                  <li onClick={handleCloseSidebar}>
-                    <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
-                      WNBA
+                  <Navlink href="/nba">
+                    <p
+                      onClick={handleCloseSidebar}
+                      className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue"
+                    >
+                      NBA
                     </p>
-                  </li>
+                  </Navlink>
                   <Navlink href="/mlb/player-true-ba">
                     <p
                       onClick={handleCloseSidebar}
@@ -121,16 +119,23 @@ const MenuSidebar: React.FC<MenuSidebarProps> = ({
                       MLB
                     </p>
                   </Navlink>
-                  <li>
-                    <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
-                      Soccer
-                    </p>
-                  </li>
-                  <li onClick={handleCloseSidebar}>
-                    <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
+                  <Navlink href="/ncaaf">
+                    <p
+                      onClick={handleCloseSidebar}
+                      className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue"
+                    >
                       NCAAF
                     </p>
-                  </li>
+                  </Navlink>
+
+                  <Navlink href="/nhl">
+                    <p
+                      onClick={handleCloseSidebar}
+                      className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue"
+                    >
+                      NHL
+                    </p>
+                  </Navlink>
                 </ul>
               </div>
               <button className="mt-4 flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white">

@@ -56,11 +56,6 @@ const NavBar: React.FC = () => {
             </Link>
             <div>
               <ul className="hidden items-center gap-x-9 lg:flex">
-                <li>
-                  <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
-                    NBA
-                  </p>
-                </li>
                 {/* NFL with Dropdown */}
                 <li className="group relative">
                   <Navlink href="/nfl/running-backs/rb-matchups">
@@ -95,27 +90,33 @@ const NavBar: React.FC = () => {
                     </ul>
                   </div>
                 </li>
-                <li>
-                  <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
-                    WNBA
+                <Navlink href="/nba">
+                  <p className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue">
+                    NBA
                   </p>
-                </li>
+                </Navlink>
                 <Navlink href="/mlb/player-true-ba">
                   <p className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue">
                     MLB
                   </p>
                 </Navlink>
-
-                <li>
-                  <p className="cursor-pointer text-sm font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
+                <Navlink href="/ncaaf">
+                  <p className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue">
                     NCAAF
                   </p>
-                </li>
-                <li>
+                </Navlink>
+
+                <Navlink href="/nhl">
+                  <p className="cursor-pointer text-sm font-bold uppercase duration-300 ease-in-out hover:text-skyBlue">
+                    NHL
+                  </p>
+                </Navlink>
+
+                {/* <li>
                   <p className="cursor-pointer text-2xl font-bold uppercase text-deepBlue duration-300 ease-in-out hover:text-skyBlue">
                     <BsThreeDots />
                   </p>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="flex items-center gap-6 lg:gap-[30px]">
@@ -137,7 +138,7 @@ const NavBar: React.FC = () => {
                     priority
                   />
                 </div>
-                <div>
+                <Link href="https://x.com/BreaknBallsBets" target="_blank">
                   <Image
                     width={24}
                     height={24}
@@ -147,7 +148,7 @@ const NavBar: React.FC = () => {
                     className="h-full w-full cursor-pointer object-cover"
                     priority
                   />
-                </div>
+                </Link>
               </div>
               <button className="flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white">
                 Join Today

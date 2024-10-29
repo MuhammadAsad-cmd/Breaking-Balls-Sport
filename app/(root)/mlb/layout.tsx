@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import MlbMainLayout from "@/app/_components/MlbMainLayout/MlbMainLayout";
 
 interface MLBLayoutProps {
-  children: ReactNode; // Define the type for children
+  children: ReactNode;
 }
 
 const MLBLayout: React.FC<MLBLayoutProps> = ({ children }) => {
