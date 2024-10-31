@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
     {
       src: "/images/image-7.png",
       alt: "Chicago-White-Sox-logo",
-      width: 50,
+      width: 48,
       height: 48,
     },
     {
@@ -145,7 +145,7 @@ const HeroSection: React.FC = () => {
                       unoptimized
                       src={logo.src}
                       alt={logo.alt}
-                      className="h-full w-full cursor-pointer object-cover"
+                      className="cursor-pointer"
                     />
                   </div>
                 </SwiperSlide>
