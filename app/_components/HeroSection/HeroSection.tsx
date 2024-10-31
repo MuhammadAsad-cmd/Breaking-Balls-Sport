@@ -138,7 +138,7 @@ const HeroSection: React.FC = () => {
             >
               {logos.map((logo, index) => (
                 <SwiperSlide key={index}>
-                  <div className="flex size-[52px] items-center justify-center">
+                  <div className="flex h-full items-center justify-center">
                     <Image
                       width={logo.width}
                       height={logo.height}
