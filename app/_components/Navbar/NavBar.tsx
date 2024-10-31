@@ -151,7 +151,9 @@ const NavBar: React.FC = () => {
                 </Link>
               </div>
               <button className="hidden h-10 items-center justify-center whitespace-nowrap rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white md:flex">
-                Join Today
+                <Link target="_blank" href="https://discord.gg/KrBS7Q2hcM">
+                  Join Today
+                </Link>
               </button>
               <div
                 onClick={() => toggleMenuSidebar(true)}

@@ -4,6 +4,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import Link from "next/link";
 
 const HeroSection: React.FC = () => {
   const logos = [
@@ -34,8 +35,8 @@ const HeroSection: React.FC = () => {
     {
       src: "/images/image-7.png",
       alt: "Chicago-White-Sox-logo",
-      width: 55,
-      height: 55,
+      width: 50,
+      height: 48,
     },
     {
       src: "/images/image-6.png",
@@ -92,8 +93,11 @@ const HeroSection: React.FC = () => {
               up-to-date information on what to play and when to play it. Join
               us today and experience the Breaking Balls Sports advantage.
             </p>
+
             <button className="mt-5 flex h-10 w-[140px] items-center justify-center rounded-md bg-skyBlue text-sm font-extrabold text-white">
-              Join Today
+              <Link target="_blank" href="https://discord.gg/KrBS7Q2hcM">
+                Join Today
+              </Link>
             </button>
           </div>
           <div className="flex-shrink-0">
@@ -134,14 +138,14 @@ const HeroSection: React.FC = () => {
             >
               {logos.map((logo, index) => (
                 <SwiperSlide key={index}>
-                  <div className="flex h-full items-center justify-center">
+                  <div className="flex size-[52px] items-center justify-center">
                     <Image
                       width={logo.width}
                       height={logo.height}
                       unoptimized
                       src={logo.src}
                       alt={logo.alt}
-                      className="cursor-pointer"
+                      className="h-full w-full cursor-pointer object-cover"
                     />
                   </div>
                 </SwiperSlide>
@@ -212,7 +216,9 @@ const HeroSection: React.FC = () => {
               knowledge, keep us a step ahead in this ever-evolving game.
             </p>
             <button className="mt-6 flex h-10 w-[130px] items-center justify-center rounded-md bg-skyBlue text-sm font-extrabold text-white">
-              Join Today
+              <Link target="_blank" href="https://discord.gg/KrBS7Q2hcM">
+                Join Today
+              </Link>
             </button>
           </div>
           <div className="flex-shrink-0">

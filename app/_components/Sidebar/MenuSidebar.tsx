@@ -139,7 +139,9 @@ const MenuSidebar: React.FC<MenuSidebarProps> = ({
                 </ul>
               </div>
               <button className="mt-4 flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-skyBlue px-[17px] text-sm font-extrabold text-white">
-                Join Today
+                <Link target="_blank" href="https://discord.gg/KrBS7Q2hcM">
+                  Join Today
+                </Link>
               </button>
             </div>
             <div
