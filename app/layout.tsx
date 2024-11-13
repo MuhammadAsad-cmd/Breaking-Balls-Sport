@@ -14,9 +14,56 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  // Primary metadata
   title: "Breaking Balls Sports",
   description: "Get Breaking Balls Sports, and Nation Footbal League insights",
+  icons: ["/images/mainlogo2.svg"],
+
+  // Canonical URL for SEO
+  alternates: {
+    canonical: "https://breaking-balls-sport.vercel.app",
+  },
+
+  metadataBase: new URL("https://breaking-balls-sport.vercel.app"),
+
+  // Open Graph (OG) tags for social media sharing
+  openGraph: {
+    title: "Breaking Balls Sports",
+    description:
+      "Get Breaking Balls Sports, and Nation Footbal League insights",
+    images: [
+      {
+        url: "/images/Breaking-Balls-Sports.png",
+        width: 1200,
+        height: 630,
+        alt: "Breaking Balls Sports",
+      },
+    ],
+    type: "website",
+    url: "https://breaking-balls-sport.vercel.app",
+    siteName: "breaking-balls-sport",
+    locale: "en_US",
+  },
+
+  // Twitter Card data for sharing on Twitter
+  twitter: {
+    card: "summary_large_image",
+    title: "Breaking Balls Sports",
+    description:
+      "Get Breaking Balls Sports, and Nation Footbal League insights",
+    site: "@breaking-balls-sport",
+    creator: "@breaking-balls-sport",
+    images: ["/images/Breaking-Balls-Sports.png"],
+  },
+
+  // Robots meta tag (instructs search engine crawlers)
+  robots: {
+    index: true, // Allow indexing
+    follow: true, // Allow following links on the page
+  },
 };
+
+export const viewport = "width=device-width, initial-scale=1";
 
 export default function RootLayout({
   children,
